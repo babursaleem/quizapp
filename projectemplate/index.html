@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
+  <script src="https://use.fontawesome.com/9a77ea3aef.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Faster+One|Seymour+One" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<!--Quiz question elements - questions are added using JavaScript-->
+<body>
+  <h1>THEE Mike Tyson Quiz</h1>
+  <div class="row">
+  <img src="img/tysoncartoon.jpg" alt="Mike Tyson Cartoon">
+
+  <form class="col-sm-7">
+  <div id ="question0" class="correct">
+  <h3>How old was Tyson when he first won the heavyweight belt?</h3>
+  </div>
+  <input id="answer0" type="text" class="form-control">
+
+  <div id ="question1" class="incorrect">
+  <h3>Where was Tyson born?</h3>
+  <input id="answer1" type="text" class="form-control">
+
+  <div id ="question2" class="incorrect">
+  <h3>Who did Tyson lose to twice?</h3>
+  <input id="answer2" type="text" class="form-control">
+
+  <div id ="question3" class="incorrect">
+  <h3>Who knocked Tyson out for the first time?</h3>
+  <input id="answer3" type="text" class="form-control">
+
+  <div id ="question4" class="incorrect">
+  <h3>Who was Tyson's mentor/first trainer?</h3>
+  <input id="answer4" type="text" class="form-control">
+<!--submit button-->
+  <button
+  onclick="checkAnswer()">Check answers</button>
+</form>
+<!--displays correct and incorrect answers-->
+    <div class="col-sm-2 col-sm-offset-1">
+      <h1 class="correct"></h1>
+      <h1 class="incorrect"></h1>
+    </div>
+  </div>
+</div>
+
+
+<script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.main.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
